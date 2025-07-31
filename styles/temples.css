@@ -1,0 +1,57 @@
+@media screen and (max-width: 801px) {
+    #menu-button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        color: white;
+        background: none;
+        font-size: 2rem;
+    }
+
+    #menu-button:hover {
+        font-size: 2.2rem;
+    }
+
+    nav ul {
+        display: none;
+        background-color: purple;
+        padding: none;
+    }
+
+    nav ul li {
+        display: flex;
+        padding: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li:hover {
+        background-color: rgb(92, 10, 92);
+    }
+
+    nav ul li a:hover {
+        font-size: 1.5rem;
+        color: yellow;
+    }
+
+    #nav-menu {
+        display: none;
+        color: white;
+        flex-direction: column;
+        }
+
+    #nav-menu.open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100vw;
+        height: 100%;
+        box-sizing: border-box; 
+    }
+
+}

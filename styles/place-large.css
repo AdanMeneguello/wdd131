@@ -1,0 +1,43 @@
+@media screen and (min-width: 800px) {
+  :root {
+  --heading-font: 'Work Sans', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
+  }
+
+  body {
+    background-color: #f0fff0;
+    font-family: var(--body-font);
+    color: #000;
+  }
+
+  main {
+    background-color: #fff;
+    padding-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+  }
+
+  .bar1 {
+    background-color: rgb(233, 233, 16);
+    height: 30px;
+  }
+
+  .title-image {
+    background-color: rgb(3, 110, 3);
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: x-large;
+  }
+
+  .title-image picture {
+    display: block;
+    padding-bottom: .5rem;
+    background-color: rgb(3, 110, 3);
+    justify-content: center;
+  }
+}

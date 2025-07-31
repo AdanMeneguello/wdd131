@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil - WDD 131 - BYU-Idaho</title>
+    <meta name="description" content="Adan Souza Meneguello - Place - WDD 131 - BYU-Idaho">
+    <meta name="author" content="Adan Souza Meneguello">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="place-container">
+        <div class="title-image">
+            <h1>Brazil</h1>
+            <div class="bar1"></div>
+            <picture>
+                <source srcset="images/arara-blue.webp" media="(min-width: 801px)">
+                <source srcset="images/arara.webp" media="(max-width: 800px)">
+                <img src="images/arara-blue.webp" alt="arara-blue-brazil" >
+            </picture>
+        </div>
+        <div class="container">
+            <section class="data-country">
+            <h2>Data</h2>
+            <div class="grid-info">
+                <span class="label">Area:</span><span class="value">8,510,000 sq km</span>
+                <span class="label">Population:</span><span class="value">211,100,000</span>
+                <span class="label">Capital:</span><span class="value">Brasilia</span>
+                <span class="label">Languages:</span><span class="value">Portuguese</span>
+                <span class="label">Currency:</span><span class="value">Brazilian Real</span>
+            </div>
+            </section>
+            <div class="bar2"></div>
+            <section class="weather-country">
+                <h2>Weather ⛅</h2>
+                <img src="images/sun-sunny-icon.svg" alt="weather-sun-sunny-icon" width="200">
+                <div class="grid-info">
+                    <span class="label">Temperature:</span><span class="value"> 29°C</span>
+                    <span class="label">Conditions:</span><span class="value"> Sun Sunny</span>
+                    <span class="label">Wind:</span><span class="value"> 12 km/h</span>
+                    <span class="label">Wind Chill:</span><span class="value"> 27.3°C</span>
+                </div>
+                
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> 🌲 Adan Souza Meneguello 🌲 Sao Paulo, Brazil</p>
+        <p id="lastModified">Last Modification</p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
