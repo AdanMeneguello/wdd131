@@ -1,20 +1,22 @@
-@media screen and (min-width: 800px) {
-  :root {
-  --heading-font: 'Work Sans', sans-serif;
-  --body-font: 'DM Sans', sans-serif;
-  }
-
-  body {
-    background-color: #f0fff0;
+@media screen and (min-width: 801px) {
+  .place-container {
+    position: relative;
     font-family: var(--body-font);
-    color: #000;
+    background-color: #f0fff0;
   }
 
-  main {
-    background-color: #fff;
-    padding-bottom: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    border-radius: 16px;
+  .title-image {
+    position: relative;
+    text-align: center;
+  }
+
+  .title-image h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    background-color: rgb(3, 110, 3);
   }
 
   .bar1 {
@@ -22,22 +24,75 @@
     height: 30px;
   }
 
-  .title-image {
-    background-color: rgb(3, 110, 3);
+  .title-image picture img {
     width: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    font-family: var(--heading-font);
-    font-size: x-large;
+    height: auto 0;
+    display: block;
   }
 
-  .title-image picture {
-    display: block;
-    padding-bottom: .5rem;
-    background-color: rgb(3, 110, 3);
-    justify-content: center;
+  .data-overlay,
+  .weather-overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 250px;
   }
+
+  .data-overlay {
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-70%);
+  }
+
+  .weather-overlay {
+    top: 50%;
+    right: 2rem;
+    transform: translateY(70%);
+  }
+
+  .data-overlay h2,
+  .weather-overlay h2 {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding: 20px;
+    background-color: rgb(3, 110, 3);
+    color: white;
+    text-align: left;
+    margin-left: -30px;
+    margin-top: -.5px; 
+  }
+
+  .weather-overlay img {
+    display: none;
+  }
+
+  .grid-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .4rem .6rem;
+  }
+
+  .label {
+    font-weight: bold;
+    text-align: right;
+  }
+
+  .value {
+    text-align: left;
+  }
+
+  .container {
+    display: none;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+
 }

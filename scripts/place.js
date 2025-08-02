@@ -1,2 +1,10 @@
 document.querySelector("#currentyear").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = document.lastModified;
+
+function calculateWindChill(temp, wind) {
+  if (temp <= 10 && wind > 4.8) {
+    return (13.12 + 0.6215 * temp - 11.37 * wind**0.16 + 0.3965 * temp * wind**0.16).toFixed(1);
+  } else {
+    return temp;
+  }
+}
