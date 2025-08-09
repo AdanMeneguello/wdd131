@@ -172,6 +172,4 @@ document.querySelectorAll("#nav-menu a").forEach(link => {
     });
 });
 clearGallery();
-
-
 createTempleCard(temples);
