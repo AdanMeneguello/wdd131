@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site Plan – W05</title>
+  <link rel="stylesheet" href="styles/siteplan.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <header>
+    <h1>Site Planning Document - Adan Meneguello</h1>
+    <p class="muted">Guiding and explanatory document for the final project.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2> Site Name</h2>
+      <p><strong>Proposed name:</strong> <em>Kart Beginners Sao Paulo</em>  .</p>
+      <ul>
+        <li>This website will be an informative guide for beginners to karting in the state of São Paulo.
+            It will explain what karting is, who and where to practice it, the best way to practice, and necessary precautions. 
+            It also includes links to schedule appointments with the karting track.</li>
+        <li><strong>Desired domain:</strong><code>kartbeginnersp.com</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Site Purpose</h2>
+      <p>The first page, which will be the main one, will show general information about karting: what it is, where it originated, mechanics, races, and careers. A first page to get you interested in the subject.
+        There will be blocks with paragraphs and images in each block, separated by topic.
+        There will be a dynamic navigation bar and a responsive image, as well as a header. The second page, called Kart-track, will list all kart tracks in the São Paulo region. It will be in card format, similar to the filtered temple activity.
+        The third page will contain information on care and tips for starting your first kart race. It will be explanatory and will include a video and a question field to send to the site owner (this will be a fictional form field just to train the front-end).</p>
+    </section>
+
+    <section>
+      <h2> Scenarios</h2>
+      <ul>
+        <li>Ex.: What is the best kart-track option for beginners?</li>
+        <li>Ex.: Where can I find contact/sign‑up/events?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2> Color Scheme</h2>
+      <p>Use the colors below in this document and in the project. Briefly justify how each color will be used (headings, links, buttons, background, highlights, etc.).</p>
+      <div class="grid cols-2">
+        <div class="swatch">
+            <span class="chip-primary"></span>
+            <div><strong>Primary</strong><br><code>#D90428</code> – headings, links, primary buttons.</div>
+        </div>
+        <div class="swatch">
+            <span class="chip-accent"></span>
+            <div><strong>Accent</strong><br><code>#F7C27C</code> – highlights, badges, callouts.</div>
+        </div>
+        <div class="swatch">
+            <span class="chip-bg"></span>
+            <div><strong>Background Boxes</strong><br><code>#EBCDA7</code> – content areas, cards.</div>
+        </div>
+        <div class="swatch">
+            <span class="chip-text"></span>
+            <div><strong>Text</strong><br><code>#DFDDDD</code> – paragraph text and contrast.</div>
+        </div>
+        <div class="swatch">
+            <span class="chip-bkgcall"></span>
+            <div><strong>Background Callout</strong><br><code>#FFFFFF</code> – background all pages</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <div class="grid cols-2">
+        <div class="type-sample">
+          <div class="type-heading">Poppins – Headings & Navigation</div>
+          <p class="muted">font-family: "Poppins", sans-serif</p>
+        </div>
+        <div class="type-sample">
+          <div class="type-body">Merriweather – Body text and paragraphs. Friendly for longer reading.</div>
+          <p class="muted">font-family: "Merriweather", serif</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wireframe-box">
+      <h2>Wireframe </h2>
+      <div class="wf-wrap">
+        <figure>
+          <svg viewBox="0 0 1200 800" width="100%" height="auto" role="img" aria-label="Desktop wireframe">
+            <rect x="10" y="10" width="1180" height="780" rx="22" fill="#fff" stroke="#cfd8dc"/>
+            <rect x="40" y="40" width="1120" height="80" rx="12" fill="#e9ecef"/>
+            <rect x="40" y="140" width="1120" height="260" rx="12" fill="#f1f3f5"/>
+            <rect x="40" y="420" width="340" height="260" rx="12" fill="#f1f3f5"/>
+            <rect x="400" y="420" width="440" height="260" rx="12" fill="#f1f3f5"/>
+            <rect x="860" y="420" width="300" height="260" rx="12" fill="#f1f3f5"/>
+            <rect x="40" y="700" width="1120" height="60" rx="12" fill="#e9ecef"/>
+          </svg>
+          <figcaption>Desktop: header, sidebar, hero and content cards.</figcaption>
+        </figure>
+
+        <figure>
+          <figure>
+      <svg viewBox="0 0 390 740" width="100%" height="auto" role="img" aria-label="Mobile wireframe">
+        <rect x="5" y="5" width="380" height="730" rx="32" fill="#ffffff" stroke="#cfd8dc"/>
+        <rect x="25" y="56" width="340" height="48" rx="10" fill="#e9ecef"/>
+        <rect x="25" y="116" width="340" height="160" rx="12" fill="#f1f3f5"/>
+        <rect x="25" y="290" width="340" height="110" rx="12" fill="#f1f3f5"/>
+        <rect x="25" y="410" width="340" height="110" rx="12" fill="#f1f3f5"/>
+        <rect x="25" y="530" width="340" height="110" rx="12" fill="#f1f3f5"/>
+        <rect x="25" y="655" width="340" height="48" rx="12" fill="#e9ecef"/>
+      </svg>
+          <figcaption>Mobile: header, sidebar, hero and content cards.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="footer-note">© 2025 🏎 Adan Souza Meneguello 🏎 WDD131</p>
+  </footer>
+    
+</body>
+</html>
