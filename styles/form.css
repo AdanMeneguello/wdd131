@@ -15,7 +15,7 @@ form {
     border: 1px solid #ccc;
 }
 
-h2 {
+h1 {
     background: rgb(4, 4, 129);
     color: #fff;
     text-align: center;
@@ -105,16 +105,32 @@ footer {
 .site-header p{
     margin: .25rem 0 0
 }
-.container{max-width: 900px;
+.container{
+    max-width: 900px;
     margin-inline:auto;
     padding: 1.25rem
 }
 
-.counter-card p {
+.card {
+    background-color: rgb(58, 130, 212);
+    color: floralwhite;
+    text-align: center;
+    font-size: large;
+
+}
+.counter-card{
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+}
+
+#countLabel{
     text-align: center;
     font-size: x-large;
 }
 
-.a {
-    text-align: center;
+.counter-card,.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

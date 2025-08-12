@@ -1,6 +1,3 @@
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
-
 var products = [
   { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
   { id: "fc-2050", name: "power laces", averagerating: 4.7 },
@@ -42,4 +39,13 @@ if (summary) {
         summary.appendChild(dt);
         summary.appendChild(dd);
     });
+}
+
+var year = document.getElementById("currentyear");
+if (year) {
+    year.textContent = new Date().getFullYear();
+}
+var lastMod = document.getElementById("lastModified");
+if (lastMod) {
+    lastMod.textContent = document.lastModified;
 }
