@@ -8,6 +8,14 @@
   #menuBtn{ 
     display: none; 
   }
+  
+  .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    max-width: auto; 
+    margin: 0 auto; 
+  }
 
   .grid-2 { 
     grid-template-columns: 1fr 1fr 1fr;

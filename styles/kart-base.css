@@ -83,6 +83,8 @@ body {
 .hero img { 
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  display: flex;
+  justify-self: center;
 }
 
 .hero h1 {
@@ -118,9 +120,15 @@ h1 {
   border: 2px solid var(--primary);
 }
 
+.grid-1 {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+}
+
 .grid-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   padding: 1rem; 
 }
