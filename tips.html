@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tips & Safety — Kart Beginners SP</title>
+  <meta name="description" content="Beginner’s guide to karting in the state of São Paulo. What it is, where to race, prices, and safety tips. Adan Souza Meneguello - WDD 131 - BYU-Idaho" />
+  <meta name="author" content="Adan Souza Meneguello">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/kart-base.css">
+  <link rel="stylesheet" href="styles/kart-large.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/icon-kart.svg" alt="" width="28" height="28" aria-hidden="true" decoding="async"onerror="this.onerror=null;this.src='images/icon-kart.png';">
+      <a href="kart.html">Kart Beginners SP</a>
+    </div>
+    <button id="menuBtn" aria-expanded="false" aria-controls="siteNav">☰</button>
+    <nav id="siteNav" class="nav">
+      <a href="kart.html">Home</a>
+      <a href="tracks.html">Kart‑Track</a>
+      <a href="tips.html" class="active">Tips & Safety</a>
+    </nav>
+  </header>
+
+  <main class="grid-2">
+    <article class="card">
+      <h1>Driving tips</h1>
+      <ul>
+        <li>Look far ahead, not at the bumper in front of you.</li>
+        <li>Brake in a straight line, release before turning.</li>
+        <li>Racing line: outside → apex → outside.</li>
+        <li>Be smooth on the wheel; avoid locking the tires.</li>
+      </ul>
+      <h2>Safety</h2>
+      <ul>
+        <li>Full‑face helmet and visor down.</li>
+        <li>Hair tucked in; nothing loose on clothing.</li>
+        <li>Obey flags and the instructor’s briefing.</li>
+      </ul>
+    </article>
+
+    <aside class="card">
+      <h1>Send a question</h1>
+      <form id="questionForm" novalidate>
+        <label>Name
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Your question
+          <textarea name="msg" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+        <p id="formStatus" class="muted" role="status" aria-live="polite"></p>
+      </form>
+    </aside>
+
+    <aside class="card">
+      <h1>Follow the greater Tip</h1>
+      <section class="hero">
+      <picture>
+        <img src="images/Mid-Apex.jpg" alt="How to drive correctly" loading="eager" width="500" height="300">
+      </picture>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 🏎 Adan Souza Meneguello 🏎  São Paulo, Brazil</p>
+    <p class="muted">Last modification: <span id="lastmod"></span></p>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/tips.js" defer></script>
+</body>
+</html>

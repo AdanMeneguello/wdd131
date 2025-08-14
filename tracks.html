@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kart‑Track — Kart Beginners SP</title>
+  <meta name="description" content="Beginner’s guide to karting in the state of São Paulo. What it is, where to race, prices, and safety tips. Adan Souza Meneguello - WDD 131 - BYU-Idaho" />
+  <meta name="author" content="Adan Souza Meneguello">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/kart-base.css">
+  <link rel="stylesheet" href="styles/kart-large.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/icon-kart.svg" alt="" width="28" height="28" aria-hidden="true" decoding="async"onerror="this.onerror=null;this.src='images/icon-kart.png';">
+      <a href="kart.html">Kart Beginners SP</a>
+    </div>
+    <button id="menuBtn" aria-expanded="false" aria-controls="siteNav">☰</button>
+    <nav id="siteNav" class="nav">
+      <a href="kart.html">Home</a>
+      <a href="tracks.html" class="active">Kart‑Track</a>
+      <a href="tips.html">Tips & Safety</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Kart‑Tracks in São Paulo</h1>
+
+    <div class="filters">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="capital">Capital</button>
+      <button class="chip" data-filter="metropolitana">Greater SP</button>
+      <button class="chip" data-filter="interior">Countryside</button>
+      <button class="chip" data-filter="cheap">Up to R$ 150</button>
+    </div>
+
+    <section id="tracksGrid" class="cards-grid" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span>🏎 Adan Souza Meneguello 🏎 São Paulo, Brazil</p>
+    <p class="muted">Last modification: <span id="lastmod"></span></p>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/tracks.js" defer></script>
+</body>
+</html>

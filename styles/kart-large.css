@@ -1,0 +1,27 @@
+@media (min-width: 900px){
+  .nav {
+    display: flex !important;
+    flex-direction: row; 
+    gap: 1rem; 
+  }
+  
+  #menuBtn{ 
+    display: none; 
+  }
+
+  .grid-2 { 
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: auto; 
+    margin: 0 auto; 
+  }
+  
+  .hero { 
+    max-width: auto;
+    margin: 1rem auto;
+  }
+  
+  .cards-grid{
+    max-width: 1100px; 
+    margin: 0 auto; 
+  }
+}

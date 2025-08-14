@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kart Beginners — Sao Paulo</title>
+  <meta name="description" content="Beginner’s guide to karting in the state of São Paulo. What it is, where to race, prices, and safety tips. Adan Souza Meneguello - WDD 131 - BYU-Idaho" />
+  <meta name="author" content="Adan Souza Meneguello">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/kart-base.css">
+  <link rel="stylesheet" href="styles/kart-large.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/icon-kart.svg" alt="" width="28" height="28" aria-hidden="true" decoding="async" onerror="this.onerror=null;this.src='images/icon-kart.png';">
+      <a href="kart.html">Kart Beginners SP</a>
+    </div>
+
+    <button id="menuBtn" aria-expanded="false" aria-controls="siteNav">☰</button>
+
+    <nav id="siteNav" class="nav">
+      <a href="kart.html" class="active">Home</a>
+      <a href="tracks.html">Kart‑Track</a>
+      <a href="tips.html">Tips & Safety</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero.webp" media="(min-width: 900px)">
+        <img src="images/hero.webp" alt="Rental karts on the track" loading="eager" width="800" height="400">
+      </picture>
+      <h1>Start karting in São Paulo</h1>
+      <p>Learn the basics, find nearby tracks, compare prices and book your first session. We’ve got beginner driving and safety tips, too.</p>
+      <div class="hero-cta">
+        <a class="btn" href="tracks.html">See tracks</a>
+        <a class="btn btn-outline" href="tips.html">Beginner tips</a>
+      </div>
+    </section>
+
+    <section class="content grid-2">
+      <article class="card">
+        <h2>What is karting?</h2>
+        <p class="lead">Karting is the gateway to motorsport. Short “arrive & drive” sessions in rental karts — no license required.</p>
+        <ul>
+          <li>10–25 minute sessions</li>
+          <li>Equipment included (suit & helmet)</li>
+          <li>Timing and lap charts</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>How to get started</h2>
+        <ol>
+          <li>Pick a track and check pricing/availability.</li>
+          <li>Book online.</li>
+          <li>Arrive 20 minutes early for briefing and gear up.</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h2>About Karting</h2>
+        <ol>
+            <li>Karting is a motorsport that serves as both a recreational activity and a training ground for professional racing.</li>
+            <li>It originated in the late 1950s in the United States.</li>
+            <li>The first kart was built in 1956 by Art Ingels in California.</li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span>🏎 Adan Souza Meneguello 🏎 São Paulo, Brazil</p>
+    <p class="muted">Last modification: <span id="lastmod"></span></p>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
